@@ -3,7 +3,6 @@ interface MyDisplayerInterface {
 	void display(int number);
 }
 
-
 public class JavaCallBackMethod {
 
 	public static void myDisplayer(int number) {
