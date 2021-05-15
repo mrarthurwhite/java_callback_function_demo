@@ -10,8 +10,8 @@ public class JavaCallBackMethod {
 		System.out.println("Displaying number: " + number)
 	}
 	
-	public static void myCalculator(MyDiisplayerInterface myCallback, String str){
-	   myCallback.stringFunction(str);
+	public static void myCalculator( int number, MyDiisplayerInterface myCallback){
+	   myCallback.stringFunction(number);
 	}
 	
 	public static void main (String args[]) {
@@ -20,7 +20,7 @@ public class JavaCallBackMethod {
 			return new StringBuffer(str).reverse().toString();
 		};
 
-		// Output: omeD adbmaL
-		myCalculator(reverse, "Lambda Demo"); 
+		// 
+		myCalculator( 100, reverse); 
 	}
 }
